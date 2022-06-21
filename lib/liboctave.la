@@ -5,19 +5,19 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='liboctave.so.4'
+dlname=''
 
 # Names of this library.
-library_names='liboctave.so.4.0.0 liboctave.so.4 liboctave.so'
+library_names=''
 
 # The name of the static archive.
-old_library=''
+old_library='liboctave.a'
 
 # Linker flags that cannot go in dependency_libs.
 inherited_linker_flags=' -pthread -fopenmp'
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/opt/octave/lib -lcurl /opt/octave/lib/libfftw3.la /opt/octave/lib/libfftw3f.la -lopenblas -lreadline -lncurses -lpcre -ldl -lgfortran -lquadmath'
+dependency_libs=' -L/opt/octave/lib -lcurl -lcholmod -lumfpack -lamd -lcamd -lcolamd -lccolamd -lcxsparse -lsuitesparseconfig -lfftw3_threads -lfftw3 -lfftw3f_threads -lfftw3f -llapack -lblas -lreadline -lncurses -lpcre -lgfortran -lquadmath'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

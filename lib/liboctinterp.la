@@ -5,19 +5,19 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='liboctinterp.so.4'
+dlname=''
 
 # Names of this library.
-library_names='liboctinterp.so.4.0.0 liboctinterp.so.4 liboctinterp.so'
+library_names=''
 
 # The name of the static archive.
-old_library=''
+old_library='liboctinterp.a'
 
 # Linker flags that cannot go in dependency_libs.
 inherited_linker_flags=' -pthread -fopenmp'
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/opt/octave/lib /opt/octave/lib/octave/4.2.2/liboctave.la -lcurl -lopenblas -lreadline -lncurses -lpcre -ldl -lgfortran -lquadmath -lz /opt/octave/lib/libfftw3.la /opt/octave/lib/libfftw3f.la'
+dependency_libs=' -L/opt/octave/lib -lglpk -lbz2 /opt/octave/lib/octave/4.2.2/liboctave.la -lcurl -lcholmod -lumfpack -lamd -lcamd -lcolamd -lccolamd -lcxsparse -lsuitesparseconfig -lblas -lreadline -lncurses -lpcre -lgfortran -lquadmath -lz -lfftw3_threads -lfftw3 -lfftw3f_threads -lfftw3f -lfontconfig -lfreetype -lX11 -lgl2ps -llapack'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
